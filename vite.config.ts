@@ -14,6 +14,7 @@ export default defineConfig(({mode}) => {
       alias: {
         '@': path.resolve(__dirname, '.'),
       },
+      ,
     },
     server: {
       // HMR is disabled in AI Studio via DISABLE_HMR env var.
@@ -21,4 +22,5 @@ export default defineConfig(({mode}) => {
       hmr: process.env.DISABLE_HMR !== 'true',
     },
   };
+  base: '/TeraSi-Web-Page/',
 });
